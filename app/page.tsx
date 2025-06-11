@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <div className='flex flex-col min-h-screen'>
       <header className='sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'>
-        <div className='container mx-auto px-10 lg:px-0 w-full flex h-16 items-center justify-between'>
+        <div className='px-20 w-full flex h-16 items-center justify-between'>
           <div className='flex items-center gap-2'>
             <Image
               src={'/logo.png'}
@@ -42,7 +42,7 @@ export default function Home() {
       <main className=''>
         {/* Hero Section */}
         <section className='relative bg-[#fbf8f1] '>
-          <div className='grid lg:grid-cols-2 grid-cols-1 px-10 lg:px-0 gap-5 container mx-auto w-full lg:py-32 py-14'>
+          <div className='grid lg:grid-cols-2 grid-cols-1 px-20 gap-5  w-full lg:py-32 py-14'>
             <div className='lg:order-first'>
               <div className='max-w-2xl space-y-6'>
                 <h1 className='text-4xl md:text-5xl lg:text-5xl font-bold text-gray-900'>
@@ -57,43 +57,13 @@ export default function Home() {
                   Limited-time offer—book your consultation now and experience
                   the joy of silky skin!
                 </span>
-                {/* <div className='mt-5 flex flex-row items-center justify-between gap-5 border-t border-[#c6993e] border-b py-5'>
-                  <div className='flex flex-row gap-3 items-center w-full'>
-                    <div>
-                      <Phone />
-                    </div>
-                    <Link href='tel:+919899121263' className='flex flex-col'>
-                      <span className='text-custom-heavyblue font-normal text-xs'>
-                        Call Us
-                      </span>
-                      <span className='text-[#c6993e] '>+91-9899121263</span>
-                    </Link>
-                  </div>
-                  <div className='flex flex-row gap-3 items-center'>
-                    <div>
-                      <MapPin />
-                    </div>
-                    <Link
-                      href={'https://maps.app.goo.gl/ebMHfXEMgimFHU6B9'}
-                      className='flex flex-col'
-                    >
-                      <span className='text-custom-heavyblue font-normal text-xs'>
-                        Location
-                      </span>
-                      <span className='text-[#c6993e] '>
-                        D-2/42, Pandit Vishnu Dutt Marg, Block D2, Janakpuri,
-                        New Delhi 110058
-                      </span>
-                    </Link>
-                  </div>
-                </div> */}
 
-                <div className='mt-5'>
+                <div className=' mt-7'>
                   <ConsultationModal />
                 </div>
               </div>
             </div>
-            <div className='lg:w-3/4 w-full lg:ml-38 ml-0 order-first'>
+            <div className=' w-full flex flex-row justify-end order-first'>
               <ConsultationForm />
             </div>
           </div>
@@ -101,7 +71,7 @@ export default function Home() {
 
         {/* About Section */}
         <section id='about' className='py-16 bg-white'>
-          <div className='container mx-auto w-full px-10 lg:px-0'>
+          <div className='px-20'>
             <div className='grid md:grid-cols-2 gap-12 items-center'>
               <div>
                 <Image
@@ -149,7 +119,7 @@ export default function Home() {
 
         {/* Procedure Section */}
         <section className='py-16 bg-amber-50'>
-          <div className='container mx-auto w-full px-10 lg:px-0'>
+          <div className='px-20'>
             <div className='text-center max-w-3xl mx-auto mb-12'>
               <h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
                 The Procedure of Laser Hair Treatment
@@ -236,7 +206,7 @@ export default function Home() {
 
         {/* Benefits Section */}
         <section id='benefits' className='py-16 bg-white'>
-          <div className='container mx-auto w-full px-10 lg:px-0'>
+          <div className='px-20'>
             <div className='text-center max-w-3xl mx-auto mb-12'>
               <h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
                 Benefits of Laser Hair Reduction
@@ -302,7 +272,7 @@ export default function Home() {
 
         {/* Pricing Section */}
         <section id='pricing' className='py-16 bg-amber-50'>
-          <div className='container mx-auto w-full px-10 lg:px-0'>
+          <div className='px-20'>
             <div className='text-center max-w-3xl mx-auto mb-12'>
               <h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
                 Cost of Laser Hair Removal Treatment
@@ -367,7 +337,7 @@ export default function Home() {
 
         {/* FAQ Section */}
         <section id='faq' className='py-16 bg-white'>
-          <div className='container mx-auto w-full px-10 lg:px-0'>
+          <div className='px-20'>
             <div className='text-center max-w-3xl mx-auto mb-12'>
               <h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
                 Frequently Asked Questions
@@ -464,7 +434,7 @@ export default function Home() {
 
         {/* Contact Section */}
         <section className='py-16 bg-amber-50'>
-          <div className='container mx-auto w-full px-10 lg:px-0'>
+          <div className='px-20'>
             <div className='grid md:grid-cols-2 gap-12'>
               <div className='space-y-6'>
                 <h2 className='text-3xl md:text-4xl font-bold text-gray-900'>
@@ -521,7 +491,9 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <ConsultationForm />
+              <div className=' w-full flex flex-row justify-end '>
+                <ConsultationForm />
+              </div>
             </div>
           </div>
         </section>

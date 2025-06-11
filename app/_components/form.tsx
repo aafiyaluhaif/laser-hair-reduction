@@ -41,7 +41,7 @@ export default function ConsultationForm() {
   };
 
   return (
-    <div className='bg-white p-6 rounded-lg shadow-sm'>
+    <div className='bg-white p-6 rounded-lg shadow-sm  lg:w-3/4 w-full'>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-8'>
           <FormField
