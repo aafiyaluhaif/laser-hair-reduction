@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <div className='flex flex-col min-h-screen'>
       <header className='sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'>
-        <div className='px-20 w-full flex h-16 items-center justify-between'>
+        <div className='lg:px-20 px-10 w-full flex h-16 items-center justify-between'>
           <div className='flex items-center gap-2'>
             <Image
               src={'/logo.png'}
@@ -42,7 +42,7 @@ export default function Home() {
       <main className=''>
         {/* Hero Section */}
         <section className='relative bg-[#fbf8f1] '>
-          <div className='grid lg:grid-cols-2 grid-cols-1 px-20 gap-5  w-full lg:py-32 py-14'>
+          <div className='grid lg:grid-cols-2 grid-cols-1 lg:px-20 px-10 gap-5  w-full lg:py-32 py-14'>
             <div className='lg:order-first'>
               <div className='max-w-2xl space-y-6'>
                 <h1 className='text-4xl md:text-5xl lg:text-5xl font-bold text-gray-900'>
@@ -71,7 +71,7 @@ export default function Home() {
 
         {/* About Section */}
         <section id='about' className='py-16 bg-white'>
-          <div className='px-20'>
+          <div className='lg:px-20 px-10'>
             <div className='grid md:grid-cols-2 gap-12 items-center'>
               <div>
                 <Image
@@ -119,7 +119,7 @@ export default function Home() {
 
         {/* Procedure Section */}
         <section className='py-16 bg-amber-50'>
-          <div className='px-20'>
+          <div className='lg:px-20 px-10'>
             <div className='text-center max-w-3xl mx-auto mb-12'>
               <h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
                 The Procedure of Laser Hair Treatment
@@ -206,7 +206,7 @@ export default function Home() {
 
         {/* Benefits Section */}
         <section id='benefits' className='py-16 bg-white'>
-          <div className='px-20'>
+          <div className='lg:px-20 px-10'>
             <div className='text-center max-w-3xl mx-auto mb-12'>
               <h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
                 Benefits of Laser Hair Reduction
@@ -272,7 +272,7 @@ export default function Home() {
 
         {/* Pricing Section */}
         <section id='pricing' className='py-16 bg-amber-50'>
-          <div className='px-20'>
+          <div className='lg:px-20 px-10'>
             <div className='text-center max-w-3xl mx-auto mb-12'>
               <h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
                 Cost of Laser Hair Removal Treatment
@@ -337,7 +337,7 @@ export default function Home() {
 
         {/* FAQ Section */}
         <section id='faq' className='py-16 bg-white'>
-          <div className='px-20'>
+          <div className='lg:px-20 px-10'>
             <div className='text-center max-w-3xl mx-auto mb-12'>
               <h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
                 Frequently Asked Questions
@@ -434,7 +434,7 @@ export default function Home() {
 
         {/* Contact Section */}
         <section className='py-16 bg-amber-50'>
-          <div className='px-20'>
+          <div className='lg:px-20 px-10'>
             <div className='grid md:grid-cols-2 gap-12'>
               <div className='space-y-6'>
                 <h2 className='text-3xl md:text-4xl font-bold text-gray-900'>

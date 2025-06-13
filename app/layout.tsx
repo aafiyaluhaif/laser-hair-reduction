@@ -1,5 +1,6 @@
 import type React from 'react';
 import '@/app/globals.css';
+import Script from 'next/script';
 
 export const metadata = {
   title: 'GlowLaser - Advanced Laser Hair Reduction Treatments',
@@ -14,6 +15,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' suppressHydrationWarning>
+      <head>
+        <Script
+          src='https://www.googletagmanager.com/gtag/js?id=G-V3VZ89SJ9Z'
+          strategy='afterInteractive'
+        />
+        <Script id='gtag-init' strategy='afterInteractive'>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-V3VZ89SJ9Z');
+        `}
+        </Script>
+      </head>
       <body>{children}</body>
     </html>
   );
